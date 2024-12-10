@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #686767;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.25s ease;
+}
+
+nav ul li a:hover{
+    background-color: #b3b3b3;
+    color: #686767;
+}
+
+.active {
+    background-color: #b3b3b3;
+    color: #686767;
+}
+
+
+main {
+    padding: 2rem;
+    margin-bottom: 60px;
+}
+
+
+footer {
+    background-color: #686767;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.position-container {
+    background-color: lightblue;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.positiom-absolute {
+    width: 100px;
+    height: 50px;
+    background-color: lightcoral;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.positiom-fixed {
+    background-color: lightcyan;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
+
+.zindex-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+}
+
+.zindex-box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+
+.zindex-1 {
+    background-color: lightgoldenrodyellow;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.zindex-2 {
+    background-color: lightgreen;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+}
+
+.zindex-3 {
+    background-color: lightgray;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+}
+
+.hover-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.hover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.25s ease;
+}
+
+.hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.hover-container:hover .hover-image{
+    opacity: 0.85;
+}
+
+.hover-container:hover .hover-text{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
